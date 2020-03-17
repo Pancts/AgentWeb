@@ -184,7 +184,7 @@ public class DefaultWebCreator implements WebCreator {
         Activity mActivity = this.mActivity;
         WebParentLayout mFrameLayout = new WebParentLayout(mActivity);
         mFrameLayout.setId(R.id.web_parent_layout_id);
-        mFrameLayout.setBackgroundColor(Color.WHITE);
+        mFrameLayout.setBackgroundColor(Color.BLACK);
         View target = mIWebLayout == null ? (this.mWebView = (WebView) createWebView()) : webLayout();
         FrameLayout.LayoutParams mLayoutParams = new FrameLayout.LayoutParams(-1, -1);
         mFrameLayout.addView(target, mLayoutParams);
